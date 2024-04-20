@@ -6,12 +6,12 @@
 #include<bits/stdc++.h>
 using namespace std;
 #define endl "\n"
-#define int long long int
+#define int long long
 
 int32_t main(){
     int n;
     cin >> n;
-
+    
     cout << n / 2 << endl;
 
     if(n % 2 == 0){
