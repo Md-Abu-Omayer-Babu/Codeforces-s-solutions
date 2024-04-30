@@ -1,4 +1,4 @@
-// Problem link : https://codeforces.com/contest/1969/problem/B
+// Problem link : https://codeforces.com/problemset/problem/1969/B
 
 // In the name of Almighty Allah
 // This code is written by "Md Abu Omayer Babu"
