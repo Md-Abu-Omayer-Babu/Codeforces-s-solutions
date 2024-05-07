@@ -15,31 +15,34 @@ int32_t main() {
     ios_base::sync_with_stdio(0);
     cin.tie(0);
 
+
     tc {
+        vector<int> pairs[1001];
+        
+        for(int i = 1; i <= 1000; i++){
+            for(int j = 1; j <= 1000; j++){
+                if(__gcd(i, j) == 1){
+                    pairs[i].push_back(j);
+                }
+            }
+        }
+
         int n;
         cin >> n;
 
-        vector<pair<int, int>> vp(1001, {0, -1});
-        vector<pair<int, int>> pairs;
-
-        vector<int> v(n);
-        for(int i = 0; i < v.size(); i++){
-            cin >> v[i];
-            vp[v[i]] = {v[i], i + 1};
-        }
-
-        for(int i = 0; i < vp.size(); i++){
-            if(vp[i].first != 0){
-                pairs.push_back({vp[i].first, vp[i].second});
-            }
+        vector<int> index[1001];
+        for(int i = 0; i < n; i++){
+            int x;
+            cin >> x;
+            index[x].push_back(i + 1);
         }
 
         int ans = -1;
 
-        for(int i = 0; i < pairs.size(); i++){
-            for(int j = i; j < pairs.size(); j++){
-                if(__gcd(pairs[i].first, pairs[j].first) == 1){
-                    ans = max(ans, pairs[i].second + pairs[j].second);
+        for(int i = 0; i < 1001; i++){
+            for(auto &it : pairs[i]){
+                if(!index[i].empty() && !index[it].empty()){
+                    ans = max(ans, index[i].back() + index[it].back());
                 }
             }
         }
