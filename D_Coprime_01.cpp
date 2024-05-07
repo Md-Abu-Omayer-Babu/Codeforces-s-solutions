@@ -19,20 +19,13 @@ int32_t main() {
         int n;
         cin >> n;
 
-        vector<int> v(n);
-        for(auto &it : v){
-            cin >> it;
-        }
-
-        int ans = -1;
-
         vector<pair<int, int>> vp(1001, {0, -1});
         vector<pair<int, int>> pairs;
 
+        vector<int> v(n);
         for(int i = 0; i < v.size(); i++){
-            if(v[i] != -1){
-                vp[v[i]] = {v[i], i + 1};
-            }
+            cin >> v[i];
+            vp[v[i]] = {v[i], i + 1};
         }
 
         for(int i = 0; i < vp.size(); i++){
@@ -40,6 +33,8 @@ int32_t main() {
                 pairs.push_back({vp[i].first, vp[i].second});
             }
         }
+
+        int ans = -1;
 
         for(int i = 0; i < pairs.size(); i++){
             for(int j = i; j < pairs.size(); j++){
