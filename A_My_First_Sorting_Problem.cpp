@@ -4,7 +4,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define endl "\n"
-#define int lAong long
+#define int long long
 #define yes cout << "YES\n"
 #define no cout << "NO\n"
 #define tc int t;cin >> t;while(t--)
