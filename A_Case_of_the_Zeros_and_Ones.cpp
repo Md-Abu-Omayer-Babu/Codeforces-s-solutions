@@ -14,6 +14,7 @@ int32_t main() {
     while(t--) {
         int n;
         cin >> n;
+        
         string s;
         cin >> s;
 
