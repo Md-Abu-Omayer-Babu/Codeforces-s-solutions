@@ -12,6 +12,7 @@ using namespace std;
 #define tc int t;cin >> t;while(t--)
 
 int32_t main(){
+ 
     tc{
         int n;
         cin >> n;
