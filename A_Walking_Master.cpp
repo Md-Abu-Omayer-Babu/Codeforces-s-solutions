@@ -13,7 +13,7 @@ void solve() {
     int a, b, c, d;
     cin >> a >> b >> c >> d;
 
-    if(b <= d && c <= a + b - d){
+    if(b <= d && c <= a + d - b){
         int move = (d - b) + (a + d - b - c);
         cout << move << endl;
         return;
