@@ -3,6 +3,7 @@
 // In the name of Almighty Allah
 // This code is written by "Md Abu Omayer Babu"
 
+
 import java.util.Scanner;
 
 public class A_Coins {
