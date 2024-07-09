@@ -4,11 +4,8 @@
 // This code is written by "Md Abu Omayer Babu"
 
 import java.util.Scanner;
-
 public class A_Coins {
-
     public static void main(String[] args) {
-
         Scanner scn = new Scanner(System.in);
         long t = scn.nextLong();
         while (t > 0){
