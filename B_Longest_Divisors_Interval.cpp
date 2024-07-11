@@ -13,19 +13,28 @@ void solve(){
     int n;
     cin >> n;
 
-    int cnt = 0;
-    int temp = 0;
+    vector<int> v;
 
-    for(int i = 1; i <= n; i++){
-        cerr << i << " ";
+    for(int i = 1; i <= min(n, 10000LL); i++){
         if(n % i == 0){
-            cnt++;
-        }else{
-            break;
+            v.push_back(i);
         }
+    }
+
+    int cnt = 1;
+    int temp = 1;
+
+    for(int i = 0; i < v.size() - 1; i++){
+        if(v[i] == v[i + 1] - 1){
+            temp++;
+        }else{
+            temp = 1;
+        }
+        cnt = max(cnt, temp);
     }
     
     cout << cnt << endl;
+
 }
 
 int32_t main(){
