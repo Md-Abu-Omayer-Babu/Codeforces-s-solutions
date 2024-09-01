@@ -2,6 +2,7 @@
 using namespace std;
 #define endl "\n"
 
+
 int32_t main(){
     int t;
     cin >> t;
