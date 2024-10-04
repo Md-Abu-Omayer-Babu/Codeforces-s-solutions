@@ -9,7 +9,6 @@ using namespace std;
 #define no cout << "NO\n"
 #define tc int t;cin >> t;while(t--)
 
-
 void solve(){
     int n;
     cin >> n;
