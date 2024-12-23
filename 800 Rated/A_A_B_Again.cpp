@@ -1,3 +1,5 @@
+// Problem link: https://codeforces.com/problemset/problem/1999/A
+
 // In the name of Almighty Allah
 // This code is written by "Md Abu Omayer Babu"
 
