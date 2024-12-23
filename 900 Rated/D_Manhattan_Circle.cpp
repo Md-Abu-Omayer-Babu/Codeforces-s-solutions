@@ -1,3 +1,8 @@
+// Problem link : https://codeforces.com/problemset/problem/1985/D
+
+// In the name of Almighty Allah
+// This code is written by "Md Abu Omayer Babu"
+
 #include<bits/stdc++.h>
 using namespace std;
 #define endl "\n"
