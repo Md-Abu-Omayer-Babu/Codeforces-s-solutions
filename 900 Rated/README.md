@@ -1,1 +1,1 @@
-# Here's you can find all the 900 rated problem's solutions
+# Here's you can find all of my 900 rated problem's solutions
