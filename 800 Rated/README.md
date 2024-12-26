@@ -1,1 +1,1 @@
-# Here's you can find the all 800 rated problem's solutions
+# Here's you can find all of my 800 rated problems solutions
